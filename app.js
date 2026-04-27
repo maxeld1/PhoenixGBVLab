@@ -60,6 +60,112 @@ function setActiveNav() {
   }
 }
 
+function getHomeFaqBubbleLabel(id) {
+  return String(id || '')
+    .replace(/^bubble-/, '')
+    .split('-')
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
+    .join(' ');
+}
+
+function getFaqTopicKey(id) {
+  return String(id || '').replace(/^(bubble|arrow)-/, '');
+}
+
+function getScaledTransform(element, scale) {
+  const baseTransform = element.getAttribute('data-base-transform') || '';
+  const bbox = element.getBBox();
+  const centerX = bbox.x + bbox.width / 2;
+  const centerY = bbox.y + bbox.height / 2;
+  const scaleTransform = `translate(${centerX} ${centerY}) scale(${scale}) translate(${-centerX} ${-centerY})`;
+
+  return baseTransform ? `${baseTransform} ${scaleTransform}` : scaleTransform;
+}
+
+async function renderHomeFaqGraphic() {
+  if (document.body.dataset.page !== 'home') {
+    return;
+  }
+
+  const target = document.querySelector('[data-home-faq-graphic]');
+  const source = target?.dataset.homeFaqSrc;
+
+  if (!target || !source) {
+    return;
+  }
+
+  const svgUrl = new URL(source, `${getRootPath()}/`).href;
+  const response = await fetch(svgUrl);
+
+  if (!response.ok) {
+    throw new Error('Failed to load homepage FAQ graphic');
+  }
+
+  target.innerHTML = await response.text();
+
+  const svg = target.querySelector('svg');
+
+  if (!svg) {
+    return;
+  }
+
+  svg.classList.add('faq-graphic');
+  svg.setAttribute('preserveAspectRatio', 'xMidYMid meet');
+
+  const bubbleGroups = Array.from(svg.querySelectorAll('g[id^="bubble-"]'));
+  const arrowGroups = Array.from(svg.querySelectorAll('g[id^="arrow-"]'));
+  const arrowByTopic = new Map(
+    arrowGroups.map((group) => [getFaqTopicKey(group.id), group])
+  );
+
+  bubbleGroups.forEach((group) => {
+    const label = getHomeFaqBubbleLabel(group.id);
+    const topicKey = getFaqTopicKey(group.id);
+    const relatedArrow = arrowByTopic.get(topicKey) || null;
+
+    group.classList.add('faq-bubble');
+    group.setAttribute('data-base-transform', group.getAttribute('transform') || '');
+    group.setAttribute('tabindex', '0');
+    group.setAttribute('role', 'img');
+    group.setAttribute('aria-label', label);
+    group.dataset.bubbleLabel = label;
+    group.dataset.faqTopic = topicKey;
+
+    if (relatedArrow) {
+      relatedArrow.classList.add('faq-arrow');
+      relatedArrow.setAttribute('data-base-transform', relatedArrow.getAttribute('transform') || '');
+      relatedArrow.dataset.faqTopic = topicKey;
+    }
+
+    const setHoveredState = (isHovered) => {
+      group.classList.toggle('is-hovered', isHovered);
+      group.setAttribute('transform', isHovered ? getScaledTransform(group, 1.04) : group.getAttribute('data-base-transform') || '');
+
+      if (relatedArrow) {
+        relatedArrow.classList.toggle('is-hovered', isHovered);
+        relatedArrow.setAttribute(
+          'transform',
+          isHovered ? getScaledTransform(relatedArrow, 1.05) : relatedArrow.getAttribute('data-base-transform') || ''
+        );
+      }
+    };
+
+    group.addEventListener('pointerenter', () => {
+      setHoveredState(true);
+    });
+    group.addEventListener('pointerleave', () => {
+      setHoveredState(false);
+    });
+    group.addEventListener('focus', () => {
+      setHoveredState(true);
+    });
+    group.addEventListener('blur', () => {
+      setHoveredState(false);
+    });
+  });
+}
+
 function formatPublicationDate(dateString, fallbackYear) {
   if (!dateString) {
     return String(fallbackYear || '');
@@ -607,6 +713,7 @@ async function bootstrapPage() {
   setActiveNav();
   setupNav();
   setCurrentYear();
+  await renderHomeFaqGraphic();
   await renderPublicationsPage();
 }
 

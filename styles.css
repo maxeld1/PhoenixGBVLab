@@ -283,6 +283,54 @@ img {
   max-width: 28ch;
 }
 
+.faq-home-section {
+  padding-bottom: 0.25rem;
+}
+
+.faq-graphic-shell {
+  width: 100%;
+}
+
+.faq-graphic {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.faq-bubble {
+  cursor: pointer;
+  transition: opacity 220ms ease;
+}
+
+.faq-arrow {
+  transition: opacity 220ms ease;
+}
+
+.faq-bubble:focus-visible {
+  outline: none;
+}
+
+.faq-bubble > *,
+.faq-arrow > * {
+  transition: filter 220ms ease, opacity 220ms ease;
+}
+
+.faq-bubble.is-hovered > *,
+.faq-bubble:focus-visible > * {
+  filter: drop-shadow(0 18px 24px rgba(31, 26, 23, 0.18));
+}
+
+.faq-arrow.is-hovered > * {
+  filter: drop-shadow(0 12px 18px rgba(31, 26, 23, 0.14));
+}
+
+.faq-graphic:has(.faq-bubble.is-hovered) .faq-bubble:not(.is-hovered),
+.faq-graphic:has(.faq-bubble:focus-visible) .faq-bubble:not(:focus-visible),
+.faq-graphic:has(.faq-bubble.is-hovered) .faq-arrow:not(.is-hovered),
+.faq-graphic:has(.faq-bubble:focus-visible) .faq-arrow:not(.is-hovered) {
+  opacity: 0.82;
+}
+
 .stat-grid,
 .card-grid,
 .member-grid,
