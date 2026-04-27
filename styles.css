@@ -968,6 +968,10 @@ img {
 }
 
 @media (max-width: 960px) {
+  .nav {
+    padding: 0.85rem 1rem;
+  }
+
   .hero,
   .home-publications-grid,
   .home-team-grid,
@@ -1018,9 +1022,43 @@ img {
     border-radius: 14px;
   }
 
+  .hero {
+    padding-top: 1rem;
+  }
+
+  .hero-copy,
+  .logo-panel,
+  .page-banner,
+  .publication-entry,
+  .member-card,
+  .detail-item {
+    border-radius: 22px;
+  }
+
+  .button,
+  .button-secondary {
+    min-height: 46px;
+  }
+
+  .section-link {
+    white-space: normal;
+  }
+
   .footer-panel {
     flex-direction: column;
     align-items: flex-start;
+    padding: 1.2rem 1rem;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-credit {
+    width: 100%;
+  }
+
+  .footer-credit {
+    margin-left: 0;
+    text-align: left;
   }
 
   .member-grid {
@@ -1029,19 +1067,85 @@ img {
 }
 
 @media (max-width: 640px) {
+  .topbar {
+    position: sticky;
+  }
+
+  .nav {
+    gap: 0.75rem;
+  }
+
+  .brand {
+    gap: 0.7rem;
+    min-width: 0;
+  }
+
+  .brand-mark {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-copy span:first-child {
+    font-size: 0.98rem;
+  }
+
+  .brand-copy span:last-child {
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+  }
+
   .page {
-    padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding: 0.9rem 0.9rem 2.4rem;
   }
 
   .panel,
   .page-banner {
-    padding: 1.4rem;
+    padding: 1.1rem;
   }
 
   .hero-copy h1,
   .page-title h1 {
-    font-size: clamp(2.4rem, 15vw, 4rem);
+    font-size: clamp(2.2rem, 13vw, 3.4rem);
+    line-height: 0.96;
+  }
+
+  .eyebrow {
+    margin-bottom: 0.75rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    margin-top: 1.1rem;
+    gap: 0.7rem;
+  }
+
+  .hero-actions .button,
+  .hero-actions .button-secondary,
+  .publications-clear {
+    width: 100%;
+  }
+
+  .hero-logo {
+    width: min(100%, 240px);
+  }
+
+  .logo-note {
+    max-width: none;
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding-top: 1.35rem;
+  }
+
+  .section-heading,
+  .page-title {
+    margin-bottom: 0.85rem;
   }
 
   .stat-grid {
@@ -1053,11 +1157,130 @@ img {
   }
 
   .publication-entry-head {
-    align-items: flex-start;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
   }
 
   .publications-search-controls {
     grid-template-columns: 1fr;
+  }
+
+  .publications-search-input,
+  .publications-clear {
+    min-height: 50px;
+  }
+
+  .publications-tagbar,
+  .publication-tags,
+  .cite-format-tabs {
+    gap: 0.45rem;
+  }
+
+  .publication-year {
+    font-size: 1.6rem;
+  }
+
+  .publication-entry {
+    padding: 0.9rem;
+  }
+
+  .publication-title {
+    font-size: 1.02rem;
+    line-height: 1.32;
+  }
+
+  .publication-authors {
+    margin-top: 0.35rem;
+    font-size: 0.92rem;
+    line-height: 1.45;
+  }
+
+  .publication-tag,
+  .cite-button,
+  .cite-format-tab {
+    font-size: 0.8rem;
+  }
+
+  .publication-tag {
+    padding: 0.32rem 0.62rem;
+  }
+
+  .member-card {
+    max-width: none;
+  }
+
+  .member-photo {
+    width: 112px;
+    height: 112px;
+  }
+
+  .member-name {
+    font-size: 1.04rem;
+  }
+
+  .member-role,
+  .member-summary {
+    font-size: 0.9rem;
+  }
+
+  .member-detail {
+    gap: 1rem;
+  }
+
+  .member-detail-photo {
+    max-width: 240px;
+    margin: 0 auto;
+  }
+
+  .back-link {
+    margin-bottom: 0.5rem;
+    font-size: 0.94rem;
+  }
+
+  .cite-modal {
+    width: calc(100vw - 1rem);
+  }
+
+  .cite-modal-card {
+    padding: 1rem;
+    border-radius: 18px;
+  }
+
+  .cite-modal-text {
+    padding: 0.85rem;
+    font-size: 0.94rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .brand-copy span:first-child {
+    font-size: 0.92rem;
+  }
+
+  .brand-copy span:last-child {
+    font-size: 0.6rem;
+  }
+
+  .page {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .hero-copy h1,
+  .page-title h1 {
+    font-size: clamp(2rem, 12vw, 2.8rem);
+  }
+
+  .home-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand-mark {
+    width: 44px;
+    height: 44px;
   }
 }
