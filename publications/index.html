@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications | PhoenixGBVLab</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script defer src="/app.js"></script>
+  </head>
+  <body data-page="publications">
+    <div class="site-shell">
+      <div data-include="header"></div>
+
+      <main class="page">
+        <section class="page-banner">
+          <div class="page-title">
+            <h1>Publications</h1>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="publications-shell">
+            <div class="publications-search">
+              <label class="publications-search-label" for="publications-search">
+                Search publications
+              </label>
+              <div class="publications-search-controls">
+                <input
+                  id="publications-search"
+                  class="publications-search-input"
+                  type="search"
+                  placeholder="Search titles, authors, keywords, citations, and more"
+                  data-publication-search
+                />
+                <button
+                  class="publications-clear"
+                  type="button"
+                  data-publication-clear
+                  disabled
+                >
+                  Clear
+                </button>
+              </div>
+            </div>
+            <div class="publications-tagbar" data-publication-tags></div>
+            <div class="publications-feed" data-publications-list></div>
+            <p class="publications-empty" data-publications-empty hidden>
+              No publications matched that search.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <div data-include="footer"></div>
+    </div>
+
+    <dialog class="cite-modal" data-cite-modal>
+      <div class="cite-modal-card">
+        <div class="cite-modal-header">
+          <h2>Citation</h2>
+          <button class="cite-close" type="button" aria-label="Close citation dialog" data-cite-close>
+            ×
+          </button>
+        </div>
+        <div class="cite-format-tabs" data-cite-formats>
+          <button class="cite-format-tab" type="button" data-cite-format="apa">APA</button>
+          <button class="cite-format-tab" type="button" data-cite-format="mla">MLA</button>
+          <button class="cite-format-tab" type="button" data-cite-format="chicago">Chicago</button>
+          <button class="cite-format-tab" type="button" data-cite-format="bibtex">BibTeX</button>
+        </div>
+        <p class="cite-modal-text" data-cite-text></p>
+        <div class="cite-modal-actions">
+          <button class="button-secondary" type="button" data-copy-citation>Copy citation</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
