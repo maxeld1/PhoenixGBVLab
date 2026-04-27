@@ -1,4 +1,11 @@
 function getRootPath() {
+  const appScript = document.querySelector('script[src$="app.js"], script[src*="app.js?"]');
+
+  if (appScript && appScript.src) {
+    const rootUrl = new URL('.', appScript.src);
+    return rootUrl.href.replace(/\/$/, '');
+  }
+
   return document.body.dataset.root || '.';
 }
 
