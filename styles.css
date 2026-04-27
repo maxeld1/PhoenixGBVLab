@@ -238,6 +238,24 @@ img {
   gap: 1rem;
 }
 
+.home-section {
+  display: grid;
+  gap: 1rem;
+}
+
+.home-section-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: end;
+}
+
+.section-link {
+  color: var(--teal);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 .logo-panel {
   display: grid;
   justify-items: center;
@@ -455,6 +473,16 @@ img {
 .publications-feed {
   display: grid;
   gap: 2rem;
+}
+
+.home-publications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-publication-entry {
+  height: 100%;
 }
 
 .publication-year-group {
@@ -694,6 +722,16 @@ img {
   align-items: start;
 }
 
+.home-team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 280px));
+  gap: 1rem;
+}
+
+.home-team-card {
+  max-width: 100%;
+}
+
 .member-card {
   display: grid;
   gap: 0.75rem;
@@ -862,6 +900,20 @@ img {
   color: rgba(248, 241, 231, 0.74);
 }
 
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.footer-brand-mark {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .footer-links {
   display: flex;
   gap: 1rem;
@@ -917,11 +969,18 @@ img {
 
 @media (max-width: 960px) {
   .hero,
+  .home-publications-grid,
+  .home-team-grid,
   .split,
   .member-detail,
   .card-grid,
   .event-grid {
     grid-template-columns: 1fr;
+  }
+
+  .home-section-head {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .publication-year-group {

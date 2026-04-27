@@ -1,3 +1,7 @@
+function getRootPath() {
+  return document.body.dataset.root || '.';
+}
+
 async function injectPartial(target) {
   const partialName = target.dataset.include;
 
@@ -5,13 +9,15 @@ async function injectPartial(target) {
     return;
   }
 
-  const response = await fetch(`/partials/${partialName}.html`);
+  const rootPath = getRootPath();
+  const response = await fetch(`${rootPath}/partials/${partialName}.html`);
 
   if (!response.ok) {
     throw new Error(`Failed to load partial: ${partialName}`);
   }
 
-  target.innerHTML = await response.text();
+  const markup = await response.text();
+  target.innerHTML = markup.replaceAll('{{ROOT}}', rootPath);
 }
 
 let publicationCitationFormats = new Map();
@@ -501,7 +507,7 @@ async function renderPublicationsPage() {
     return;
   }
 
-  const response = await fetch('/data/publications.json');
+  const response = await fetch(`${getRootPath()}/data/publications.json`);
 
   if (!response.ok) {
     throw new Error('Failed to load publications data');

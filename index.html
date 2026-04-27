@@ -8,61 +8,134 @@
       name="description"
       content="PhoenixGBVLab researches gender-based violence through evidence, policy translation, and survivor-centered collaboration."
     />
-    <link rel="icon" type="image/png" href="/assets/logos/phoenix_gbv_lab_logo.png" />
-    <link rel="stylesheet" href="/styles.css" />
-    <script defer src="/app.js"></script>
+    <link rel="icon" type="image/png" href="./assets/logos/phoenix_gbv_lab_logo.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
   </head>
-  <body data-page="home">
+  <body data-page="home" data-root=".">
     <div class="site-shell">
       <div data-include="header"></div>
 
       <main class="page">
         <section class="hero">
           <div class="panel hero-copy fade-in">
-            <h1>PhoenixGBVLab is...</h1>
+            <div class="eyebrow">PhoenixGBVLab</div>
+            <h1>PhoenixGBVLab</h1>
             <p class="lead">
-              We are a public health research lab at Temple University exploring trauma recovery and how to create a more supportive world for survivors of violence.
+              A Temple University public health research lab focused on trauma recovery,
+              gender-based violence, and building more supportive systems for survivors.
             </p>
             <div class="hero-actions">
-              <a class="button" href="/research/">Explore Projects</a>
-              <a class="button-secondary" href="/team/">Meet the Team</a>
+              <a class="button" href="./publications/">View Publications</a>
+              <a class="button-secondary" href="./team/">Meet the Team</a>
             </div>
           </div>
 
-          <div class="hero-aside">
-            <div class="panel logo-panel fade-in">
-              <img
-                class="hero-logo"
-                src="/assets/logos/phoenix_gbv_lab_logo.png"
-                alt="PhoenixGBVLab logo with a phoenix and the phrase Healing is Possible"
-              />
-              <p class="logo-note">
-                The lab identity centers healing, resilience, and visible solidarity across
-                survivor-centered research and community partnership work.
+          <div class="panel logo-panel fade-in">
+            <img
+              class="hero-logo"
+              src="./assets/logos/phoenix_gbv_lab_logo.png"
+              alt="PhoenixGBVLab logo with a phoenix and the phrase Healing is Possible"
+            />
+            <p class="logo-note">
+              Research grounded in healing, survivor-centered inquiry, and public health impact.
+            </p>
+          </div>
+        </section>
+
+        <section class="section home-section">
+          <div class="section-heading home-section-head">
+            <div>
+              <h2>Publications</h2>
+              <p>
+                Recent scholarship and ongoing outputs from PhoenixGBVLab. Visit the full archive
+                for searchable citations, tags, and citation export formats.
               </p>
             </div>
-            <div class="panel fade-in">
-              <div class="section-heading">
-                <h2>Core Focus Areas</h2>
-                <p>Use this block to state the lab's main research priorities.</p>
+            <a class="section-link" href="./publications/">See all publications</a>
+          </div>
+
+          <div class="home-publications-grid">
+            <article class="publication-entry home-publication-entry">
+              <h3 class="publication-title">
+                <a
+                  class="publication-title-link"
+                  href="./publications/"
+                >
+                  Development and Validation of the Motivators and Resources for Trauma Recovery Scale for Gender-based Violence Survivors
+                </a>
+              </h3>
+              <p class="publication-authors">
+                Mughal, Farida Bibi MScN, BScN; Sinko, Laura PhD, MSPH, RN; Arnault, Denise Saint PhD, RN, FAAN
+              </p>
+              <div class="publication-tags">
+                <span class="publication-tag">Gender-Based Violence</span>
+                <span class="publication-tag">Trauma Recovery</span>
+                <span class="publication-tag">Measurement &amp; Psychometrics</span>
               </div>
-              <div class="tag-row">
-                <span class="tag">Prevention</span>
-                <span class="tag">Policy</span>
-                <span class="tag">Survivor Support</span>
-                <span class="tag">Community Partnerships</span>
+            </article>
+
+            <article class="publication-entry home-publication-entry">
+              <h3 class="publication-title">
+                <a
+                  class="publication-title-link"
+                  href="./publications/"
+                >
+                  Global Voices of Trauma Recovery: A Synthesis of Survivor-Provided Advice for Overcoming Gender-Based Violence Across Seven Countries
+                </a>
+              </h3>
+              <p class="publication-authors">
+                Sinko, L.; Sorsa, M.; Beardmore, L.; Thorvaldsdottir, K.B.; and collaborators
+              </p>
+              <div class="publication-tags">
+                <span class="publication-tag">Gender-Based Violence</span>
+                <span class="publication-tag">Trauma Recovery</span>
+                <span class="publication-tag">Qualitative Research</span>
               </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section home-section">
+          <div class="section-heading home-section-head">
+            <div>
+              <h2>Team</h2>
+              <p>
+                Learn more about the researchers behind the lab and use the team page for fuller
+                member profiles.
+              </p>
             </div>
-            <div class="stat-grid fade-in">
-              <article class="stat">
-                <div class="stat-value">05</div>
-                <div class="stat-label">Site sections included in this framework</div>
-              </article>
-              <article class="stat">
-                <div class="stat-value">100%</div>
-                <div class="stat-label">Responsive layout for desktop and mobile</div>
-              </article>
-            </div>
+            <a class="section-link" href="./team/">View full team</a>
+          </div>
+
+          <div class="home-team-grid">
+            <article class="member-card featured-member home-team-card">
+              <a class="member-card-link" href="./team/laura-sinko/">
+                <img
+                  class="member-photo"
+                  src="./assets/team_photos/laura-sinko.jpg"
+                  alt="Laura Sinko"
+                />
+                <div>
+                  <h3 class="member-name">Laura Sinko</h3>
+                  <p class="member-role">Principal Investigator</p>
+                </div>
+              </a>
+            </article>
+
+            <article class="member-card featured-member home-team-card">
+              <a class="member-card-link" href="./team/kayleigh-izzo/">
+                <img
+                  class="member-photo"
+                  src="./assets/team_photos/kayleigh-izzo.jpg"
+                  alt="Kayleigh Izzo"
+                />
+                <div>
+                  <h3 class="member-name">Kayleigh Izzo</h3>
+                  <p class="member-role">Research Associate</p>
+                </div>
+              </a>
+            </article>
           </div>
         </section>
 
