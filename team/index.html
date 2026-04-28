@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Team | PhoenixGBVLab</title>
-    <link rel="icon" type="image/png" href="../assets/logos/phoenix_gbv_lab_logo.png" />
+    <meta
+      name="description"
+      content="The researchers, students, and collaborators behind PhoenixGBVLab — meet the people building the lab's work."
+    />
+    <link rel="icon" type="image/png" href="../assets/logos/phoenixlab_logo.png" />
     <link rel="stylesheet" href="../styles.css" />
     <script defer src="../app.js"></script>
   </head>
@@ -13,43 +17,205 @@
       <div data-include="header"></div>
 
       <main class="page">
-        <section class="page-banner">
+        <section class="page-banner reveal">
           <div class="page-title">
-            <h1>Our Team</h1>
+<!--            <span class="eyebrow">Who we are</span>-->
+            <h1>Our team</h1>
+<!--            <p>-->
+<!--              A small core team and a wide network of collaborators —-->
+<!--              researchers, clinicians, students, and survivor-advocates working-->
+<!--              together across institutions and continents.-->
+<!--            </p>-->
           </div>
         </section>
 
-        <section class="section">
+        <!-- Principal Investigator -->
+        <section class="section team-category">
+          <div class="team-category-head reveal">
+            <h2>Principal Investigator</h2>
+            <span class="meta">Lab director &amp; lead researcher</span>
+          </div>
           <div class="member-grid">
-            <article class="member-card featured-member">
+            <article class="member-card featured-member reveal">
               <a class="member-card-link" href="./laura-sinko/">
                 <img
                   class="member-photo"
                   src="../assets/team_photos/laura-sinko.jpg"
                   alt="Laura Sinko"
                 />
-                <div>
-                  <h3 class="member-name">Laura Sinko</h3>
-                  <p class="member-role">Principal Investigator</p>
+                <h3 class="member-name">Laura Sinko</h3>
+                <p class="member-role">PhD, MSPH, RN &middot; Principal Investigator</p>
+                <div class="member-tags">
+                  <span class="member-chip ember">PI</span>
+                  <span class="member-chip">Trauma Recovery</span>
                 </div>
-                <p class="member-summary">View profile</p>
+                <p class="member-summary">View profile &rarr;</p>
               </a>
             </article>
+          </div>
+        </section>
 
-            <article class="member-card featured-member">
+        <!-- Researchers -->
+        <section class="section team-category">
+          <div class="team-category-head reveal">
+            <h2>Researchers</h2>
+            <span class="meta">Postdoctoral &amp; staff researchers</span>
+          </div>
+          <div class="member-grid">
+            <article class="member-card featured-member reveal" data-reveal-delay="1">
               <a class="member-card-link" href="./kayleigh-izzo/">
                 <img
                   class="member-photo"
                   src="../assets/team_photos/kayleigh-izzo.jpg"
                   alt="Kayleigh Izzo"
                 />
-                <div>
-                  <h3 class="member-name">Kayleigh Izzo</h3>
-                  <p class="member-role">Research Associate</p>
+                <h3 class="member-name">Kayleigh Izzo</h3>
+                <p class="member-role">Research Associate</p>
+                <div class="member-tags">
+                  <span class="member-chip">Trauma Recovery</span>
+                  <span class="member-chip gold">Translation</span>
                 </div>
-                <p class="member-summary">View profile</p>
+                <p class="member-summary">View profile &rarr;</p>
               </a>
             </article>
+
+          </div>
+        </section>
+
+        <!-- Students -->
+        <section class="section team-category">
+          <div class="team-category-head reveal">
+            <h2>Students &amp; trainees</h2>
+            <span class="meta">Doctoral, masters &amp; undergraduate</span>
+          </div>
+          <div class="member-grid">
+            <article class="member-card reveal">
+              <a class="member-card-link" href="#">
+                <div class="member-photo-placeholder" aria-hidden="true">+</div>
+                <h3 class="member-name">Student name</h3>
+                <p class="member-role">PhD candidate</p>
+                <p class="member-summary">Placeholder card</p>
+              </a>
+            </article>
+<!--            <article class="member-card reveal" data-reveal-delay="1">-->
+<!--              <a class="member-card-link" href="#">-->
+<!--                <div class="member-photo-placeholder ember" aria-hidden="true">+</div>-->
+<!--                <h3 class="member-name">Student name</h3>-->
+<!--                <p class="member-role">MSc student</p>-->
+<!--                <p class="member-summary">Placeholder card</p>-->
+<!--              </a>-->
+<!--            </article>-->
+<!--            <article class="member-card reveal" data-reveal-delay="2">-->
+<!--              <a class="member-card-link" href="#">-->
+<!--                <div class="member-photo-placeholder gold" aria-hidden="true">+</div>-->
+<!--                <h3 class="member-name">Student name</h3>-->
+<!--                <p class="member-role">Undergraduate RA</p>-->
+<!--                <p class="member-summary">Placeholder card</p>-->
+<!--              </a>-->
+<!--            </article>-->
+<!--            <article class="member-card reveal" data-reveal-delay="3">-->
+<!--              <a class="member-card-link" href="#">-->
+<!--                <div class="member-photo-placeholder plum" aria-hidden="true">+</div>-->
+<!--                <h3 class="member-name">Student name</h3>-->
+<!--                <p class="member-role">Visiting scholar</p>-->
+<!--                <p class="member-summary">Placeholder card</p>-->
+<!--              </a>-->
+<!--            </article>-->
+          </div>
+        </section>
+
+        <!-- Collaborators -->
+        <section class="section team-category">
+          <div class="team-category-head reveal">
+            <h2>Collaborators</h2>
+            <span class="meta">Partners across institutions</span>
+          </div>
+          <div class="member-grid">
+            <article class="member-card reveal">
+              <a class="member-card-link" href="#">
+                <div class="member-photo-placeholder" aria-hidden="true">+</div>
+                <h3 class="member-name">Collaborator name</h3>
+                <p class="member-role">Institution</p>
+                <p class="member-summary">Placeholder card</p>
+              </a>
+            </article>
+            <article class="member-card reveal" data-reveal-delay="1">
+              <a class="member-card-link" href="#">
+                <div class="member-photo-placeholder gold" aria-hidden="true">+</div>
+                <h3 class="member-name">Collaborator name</h3>
+                <p class="member-role">Institution</p>
+                <p class="member-summary">Placeholder card</p>
+              </a>
+            </article>
+            <article class="member-card reveal" data-reveal-delay="2">
+              <a class="member-card-link" href="#">
+                <div class="member-photo-placeholder ember" aria-hidden="true">+</div>
+                <h3 class="member-name">Collaborator name</h3>
+                <p class="member-role">Institution</p>
+                <p class="member-summary">Placeholder card</p>
+              </a>
+            </article>
+            <article class="member-card reveal" data-reveal-delay="3">
+              <a class="member-card-link" href="#">
+                <div class="member-photo-placeholder plum" aria-hidden="true">+</div>
+                <h3 class="member-name">Collaborator name</h3>
+                <p class="member-role">Institution</p>
+                <p class="member-summary">Placeholder card</p>
+              </a>
+            </article>
+          </div>
+        </section>
+
+        <!-- Alumni -->
+<!--        <section class="section team-category">-->
+<!--          <div class="team-category-head reveal">-->
+<!--            <h2>Alumni</h2>-->
+<!--            <span class="meta">Former lab members &middot; where they are now</span>-->
+<!--          </div>-->
+<!--          <div class="member-grid">-->
+<!--            <article class="member-card reveal">-->
+<!--              <a class="member-card-link" href="#">-->
+<!--                <div class="member-photo-placeholder" aria-hidden="true">+</div>-->
+<!--                <h3 class="member-name">Alum name</h3>-->
+<!--                <p class="member-role">Now at: Institution</p>-->
+<!--                <p class="member-summary">Placeholder card</p>-->
+<!--              </a>-->
+<!--            </article>-->
+<!--            <article class="member-card reveal" data-reveal-delay="1">-->
+<!--              <a class="member-card-link" href="#">-->
+<!--                <div class="member-photo-placeholder ember" aria-hidden="true">+</div>-->
+<!--                <h3 class="member-name">Alum name</h3>-->
+<!--                <p class="member-role">Now at: Institution</p>-->
+<!--                <p class="member-summary">Placeholder card</p>-->
+<!--              </a>-->
+<!--            </article>-->
+<!--            <article class="member-card reveal" data-reveal-delay="2">-->
+<!--              <a class="member-card-link" href="#">-->
+<!--                <div class="member-photo-placeholder gold" aria-hidden="true">+</div>-->
+<!--                <h3 class="member-name">Alum name</h3>-->
+<!--                <p class="member-role">Now at: Institution</p>-->
+<!--                <p class="member-summary">Placeholder card</p>-->
+<!--              </a>-->
+<!--            </article>-->
+<!--          </div>-->
+<!--        </section>-->
+
+        <!-- Join CTA -->
+        <section class="cta-banner reveal">
+          <div>
+            <span class="eyebrow" style="background: rgba(255,255,255,0.12); color: var(--gold-soft);">Join us</span>
+            <h2>Interested in joining the lab?</h2>
+            <p>
+              We work with doctoral students, postdocs, masters students, and
+              undergraduate research assistants. Tell us what draws you to this work.
+            </p>
+          </div>
+          <div class="cta-banner-actions">
+            <a class="button" href="../contact/#join">
+              How to apply
+              <span class="arrow" aria-hidden="true">&rarr;</span>
+            </a>
+            <a class="button-secondary" href="../research/">See the projects</a>
           </div>
         </section>
       </main>

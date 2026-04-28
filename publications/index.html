@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Publications | PhoenixGBVLab</title>
-    <link rel="icon" type="image/png" href="../assets/logos/phoenix_gbv_lab_logo.png" />
+    <meta
+      name="description"
+      content="Peer-reviewed publications from PhoenixGBVLab — searchable by title, author, keyword, or topic, with full citations in APA, MLA, Chicago, and BibTeX."
+    />
+    <link rel="icon" type="image/png" href="../assets/logos/phoenixlab_logo.png" />
     <link rel="stylesheet" href="../styles.css" />
     <script defer src="../app.js"></script>
   </head>
@@ -13,15 +17,41 @@
       <div data-include="header"></div>
 
       <main class="page">
-        <section class="page-banner">
+        <section class="page-banner reveal">
           <div class="page-title">
+<!--            <span class="eyebrow">Scholarship</span>-->
             <h1>Publications</h1>
+<!--            <p>-->
+<!--              Every peer-reviewed study from the lab — searchable, filterable,-->
+<!--              and citable in your format of choice.-->
+<!--            </p>-->
           </div>
         </section>
 
         <section class="section">
           <div class="publications-shell">
-            <div class="publications-search">
+            <!-- Stats -->
+            <div class="publications-stats reveal" data-publications-stats>
+              <div class="publications-stat">
+                <div class="publications-stat-value" data-pub-stat="total">—</div>
+                <div class="publications-stat-label">Total publications</div>
+              </div>
+              <div class="publications-stat">
+                <div class="publications-stat-value" data-pub-stat="recent">—</div>
+                <div class="publications-stat-label">Published since 2024</div>
+              </div>
+              <div class="publications-stat">
+                <div class="publications-stat-value" data-pub-stat="topics">—</div>
+                <div class="publications-stat-label">Distinct research topics</div>
+              </div>
+              <div class="publications-stat">
+                <div class="publications-stat-value" data-pub-stat="years">—</div>
+                <div class="publications-stat-label">Years of scholarship</div>
+              </div>
+            </div>
+
+            <!-- Search -->
+            <div class="publications-search reveal" data-reveal-delay="1">
               <label class="publications-search-label" for="publications-search">
                 Search publications
               </label>
@@ -43,11 +73,30 @@
                 </button>
               </div>
             </div>
-            <div class="publications-tagbar" data-publication-tags></div>
+
+            <!-- Tag filters -->
+            <div class="publications-tagbar reveal" data-reveal-delay="2" data-publication-tags></div>
+
+            <!-- Feed -->
             <div class="publications-feed" data-publications-list></div>
             <p class="publications-empty" data-publications-empty hidden>
               No publications matched that search.
             </p>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-banner reveal">
+          <div>
+            <span class="eyebrow" style="background: rgba(255,255,255,0.12); color: var(--gold-soft);">Looking for something specific?</span>
+            <h2>Need a particular paper or full text?</h2>
+            <p>Some PDFs aren't open access. Reach out and we'll get you what you need.</p>
+          </div>
+          <div class="cta-banner-actions">
+            <a class="button" href="../contact/">
+              Request a paper
+              <span class="arrow" aria-hidden="true">&rarr;</span>
+            </a>
           </div>
         </section>
       </main>

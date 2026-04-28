@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PhoenixGBVLab</title>
+    <title>PhoenixGBVLab | Research on Gender-Based Violence & Healing</title>
     <meta
       name="description"
-      content="PhoenixGBVLab researches gender-based violence through evidence, policy translation, and survivor-centered collaboration."
+      content="PhoenixGBVLab researches gender-based violence, trauma recovery, and the systems that support survivor healing. A Temple University public health research lab."
     />
-    <link rel="icon" type="image/png" href="./assets/logos/phoenix_gbv_lab_logo.png" />
+    <link rel="icon" type="image/png" href="assets/logos/phoenixlab_logo.png" />
     <link rel="stylesheet" href="./styles.css" />
     <script defer src="./app.js"></script>
   </head>
@@ -17,45 +17,257 @@
       <div data-include="header"></div>
 
       <main class="page">
+        <!-- ============================================================
+             HERO
+             ============================================================ -->
         <section class="hero">
-          <div class="panel hero-copy fade-in">
-            <div class="eyebrow">PhoenixGBVLab</div>
-            <h1>PhoenixGBVLab</h1>
+          <div class="feather-field" aria-hidden="true">
+            <span class="feather" style="--tx:30px;--ty:-40px;--ty2:50px;--rot:-10deg;--dur:14s;--delay:0s;left:6%;top:30%"></span>
+            <span class="feather" style="--tx:-20px;--ty:-60px;--ty2:40px;--rot:18deg;--dur:18s;--delay:2s;left:18%;top:60%"></span>
+            <span class="feather" style="--tx:40px;--ty:-30px;--ty2:60px;--rot:-22deg;--dur:16s;--delay:4s;left:80%;top:20%"></span>
+            <span class="feather" style="--tx:-30px;--ty:-50px;--ty2:30px;--rot:8deg;--dur:20s;--delay:1s;left:88%;top:55%"></span>
+            <span class="feather" style="--tx:25px;--ty:-70px;--ty2:80px;--rot:-14deg;--dur:22s;--delay:3s;left:48%;top:75%"></span>
+          </div>
+
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Temple University &middot; Public Health Research</span>
+            <h1 class="hero-title">
+              Healing is <span class="accent">possible.</span>
+            </h1>
             <p class="lead">
-              A Temple University public health research lab focused on trauma recovery,
-              gender-based violence, and building more supportive systems for survivors.
+              A Temple University public health research lab focused on trauma recovery, gender-based violence, and building more supportive systems for survivors.
             </p>
             <div class="hero-actions">
-              <a class="button" href="./publications/">View Publications</a>
-              <a class="button-secondary" href="./team/">Meet the Team</a>
+              <a class="button" href="./research/">
+                Explore the research
+                <span class="arrow" aria-hidden="true">&rarr;</span>
+              </a>
+              <a class="button-secondary" href="./team/">Meet the team</a>
+            </div>
+            <div class="hero-meta">
+              <div><strong data-counter data-counter-target="35">0</strong>+ peer-reviewed publications</div>
+              <div><strong data-counter data-counter-target="7">0</strong> countries collaborating</div>
+              <div><strong>Survivor-centered</strong> research methods</div>
             </div>
           </div>
 
-          <div class="panel logo-panel fade-in">
+          <div class="hero-visual reveal" data-reveal-delay="2">
+            <div class="hero-orb" aria-hidden="true"></div>
+            <div class="hero-logo-wrap">
             <img
               class="hero-logo"
-              src="./assets/logos/phoenix_gbv_lab_logo.png"
+              src="assets/logos/phoenixlab_logo.png"
               alt="PhoenixGBVLab logo with a phoenix and the phrase Healing is Possible"
             />
-            <p class="logo-note">
-              Placeholder
-            </p>
+            </div>
           </div>
         </section>
 
+        <!-- ============================================================
+             MARQUEE — running themes
+             ============================================================ -->
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span class="marquee-item">Trauma Recovery <span class="dot"></span></span>
+            <span class="marquee-item">Survivor Voice <span class="dot"></span></span>
+            <span class="marquee-item">Healing After Harm <span class="dot"></span></span>
+            <span class="marquee-item">Gender-Based Violence <span class="dot"></span></span>
+            <span class="marquee-item">Public Health Nursing <span class="dot"></span></span>
+            <span class="marquee-item">Trauma-Informed Care <span class="dot"></span></span>
+            <span class="marquee-item">Policy &amp; Practice <span class="dot"></span></span>
+            <!-- duplicate for seamless loop -->
+            <span class="marquee-item">Trauma Recovery <span class="dot"></span></span>
+            <span class="marquee-item">Survivor Voice <span class="dot"></span></span>
+            <span class="marquee-item">Healing After Harm <span class="dot"></span></span>
+            <span class="marquee-item">Gender-Based Violence <span class="dot"></span></span>
+            <span class="marquee-item">Public Health Nursing <span class="dot"></span></span>
+            <span class="marquee-item">Trauma-Informed Care <span class="dot"></span></span>
+            <span class="marquee-item">Policy &amp; Practice <span class="dot"></span></span>
+          </div>
+        </div>
+
+        <!-- ============================================================
+             MISSION / VALUES
+             ============================================================ -->
+<!--        <section class="section home-section">-->
+<!--          <div class="section-heading center reveal">-->
+<!--            <span class="eyebrow">What we believe</span>-->
+<!--            <h2>Research grounded in care.</h2>-->
+<!--            <p>-->
+<!--              Our work sits at the intersection of public health, nursing science,-->
+<!--              and survivor-led wisdom. These principles guide every study we run.-->
+<!--            </p>-->
+<!--          </div>-->
+
+<!--          <div class="values-grid">-->
+<!--            <article class="value-card reveal" data-reveal-delay="1">-->
+<!--              <div class="value-icon" aria-hidden="true">-->
+<!--                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>-->
+<!--              </div>-->
+<!--              <h3>Survivor-centered</h3>-->
+<!--              <p>-->
+<!--                We design with — not for — survivors. Lived experience is treated-->
+<!--                as expertise from the first idea to the final paper.-->
+<!--              </p>-->
+<!--            </article>-->
+
+<!--            <article class="value-card gold reveal" data-reveal-delay="2">-->
+<!--              <div class="value-icon" aria-hidden="true">-->
+<!--                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>-->
+<!--              </div>-->
+<!--              <h3>Recovery as process</h3>-->
+<!--              <p>-->
+<!--                Healing isn't a destination. We track what helps, what hurts,-->
+<!--                and what changes across the lifespan after gender-based violence.-->
+<!--              </p>-->
+<!--            </article>-->
+
+<!--            <article class="value-card teal reveal" data-reveal-delay="3">-->
+<!--              <div class="value-icon" aria-hidden="true">-->
+<!--                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4z"/></svg>-->
+<!--              </div>-->
+<!--              <h3>Translation, not extraction</h3>-->
+<!--              <p>-->
+<!--                Findings are shared back into the communities that built them —-->
+<!--                in clinical practice, in policy, and in everyday support systems.-->
+<!--              </p>-->
+<!--            </article>-->
+<!--          </div>-->
+<!--        </section>-->
+
+<!--        &lt;!&ndash; ============================================================-->
+<!--             RESEARCH AREAS-->
+<!--             ============================================================ &ndash;&gt;-->
+<!--        <section class="section home-section">-->
+<!--          <div class="home-section-head">-->
+<!--            <div class="reveal">-->
+<!--              <span class="eyebrow">What we study</span>-->
+<!--              <h2>Research areas</h2>-->
+<!--              <p>Five threads that run through every active project in the lab.</p>-->
+<!--            </div>-->
+<!--            <a class="section-link reveal" data-reveal-delay="1" href="./research/">-->
+<!--              See all projects <span aria-hidden="true">&rarr;</span>-->
+<!--            </a>-->
+<!--          </div>-->
+
+<!--          <div class="area-grid">-->
+<!--            <article class="area-card ember reveal" data-reveal-delay="1">-->
+<!--              <div class="area-number">01</div>-->
+<!--              <h3>Trauma recovery measurement</h3>-->
+<!--              <p>Building and validating instruments that capture the complexity of healing after gender-based harm.</p>-->
+<!--              <div class="area-tags">-->
+<!--                <span class="area-tag">Psychometrics</span>-->
+<!--                <span class="area-tag">GBV-Heal Scale</span>-->
+<!--              </div>-->
+<!--            </article>-->
+
+<!--            <article class="area-card gold reveal" data-reveal-delay="2">-->
+<!--              <div class="area-number">02</div>-->
+<!--              <h3>Trauma-informed care</h3>-->
+<!--              <p>How institutions — campuses, clinics, hotlines — can hold people without re-traumatizing them.</p>-->
+<!--              <div class="area-tags">-->
+<!--                <span class="area-tag">Healthcare</span>-->
+<!--                <span class="area-tag">Higher Ed</span>-->
+<!--              </div>-->
+<!--            </article>-->
+
+<!--            <article class="area-card teal reveal" data-reveal-delay="3">-->
+<!--              <div class="area-number">03</div>-->
+<!--              <h3>Cross-cultural recovery</h3>-->
+<!--              <p>What does healing look like in different places? Comparing survivor narratives across seven countries.</p>-->
+<!--              <div class="area-tags">-->
+<!--                <span class="area-tag">Global</span>-->
+<!--                <span class="area-tag">Qualitative</span>-->
+<!--              </div>-->
+<!--            </article>-->
+
+<!--            <article class="area-card ember reveal" data-reveal-delay="1">-->
+<!--              <div class="area-number">04</div>-->
+<!--              <h3>Sexual violence on campus</h3>-->
+<!--              <p>Meaning-making, posttraumatic growth, and the institutional responses that shape both.</p>-->
+<!--              <div class="area-tags">-->
+<!--                <span class="area-tag">Higher Ed</span>-->
+<!--                <span class="area-tag">Mixed Methods</span>-->
+<!--              </div>-->
+<!--            </article>-->
+
+<!--            <article class="area-card plum reveal" data-reveal-delay="2">-->
+<!--              <div class="area-number">05</div>-->
+<!--              <h3>Creative methods &amp; voice</h3>-->
+<!--              <p>Photo-elicitation, reflective listening, and arts-based approaches that center survivor expression.</p>-->
+<!--              <div class="area-tags">-->
+<!--                <span class="area-tag">PEARL</span>-->
+<!--                <span class="area-tag">Photovoice</span>-->
+<!--              </div>-->
+<!--            </article>-->
+
+<!--            <article class="area-card gold reveal" data-reveal-delay="3">-->
+<!--              <div class="area-number">06</div>-->
+<!--              <h3>Policy &amp; systems</h3>-->
+<!--              <p>Translating findings into practice: from restorative justice to provider training to care policy.</p>-->
+<!--              <div class="area-tags">-->
+<!--                <span class="area-tag">Policy</span>-->
+<!--                <span class="area-tag">Practice</span>-->
+<!--              </div>-->
+<!--            </article>-->
+<!--          </div>-->
+<!--        </section>-->
+
+        <!-- ============================================================
+             IMPACT / STATS
+             ============================================================ -->
         <section class="section home-section">
-          <div class="section-heading home-section-head">
-            <div>
-              <h2>Publications</h2>
-              <p>
-                Recent scholarship and ongoing outputs from PhoenixGBVLab.
-              </p>
+          <div class="section-heading reveal">
+<!--            <span class="eyebrow">By the numbers</span>-->
+            <h2>A growing body of work.</h2>
+            <p>The lab's footprint, at a glance. Updated as new work goes to press.</p>
+          </div>
+
+          <div class="stat-grid">
+            <article class="stat reveal" data-reveal-delay="1">
+              <div class="stat-value">
+                <span data-counter data-counter-target="35">0</span><span class="stat-suffix">+</span>
+              </div>
+              <div class="stat-label">Peer-reviewed publications since 2021</div>
+            </article>
+            <article class="stat reveal" data-reveal-delay="2">
+              <div class="stat-value">
+                <span data-counter data-counter-target="7">0</span>
+              </div>
+              <div class="stat-label">Countries represented in cross-cultural studies</div>
+            </article>
+            <article class="stat reveal" data-reveal-delay="3">
+              <div class="stat-value">
+                <span data-counter data-counter-target="60">0</span><span class="stat-suffix">+</span>
+              </div>
+              <div class="stat-label">Co-authors and collaborators worldwide</div>
+            </article>
+            <article class="stat reveal" data-reveal-delay="4">
+              <div class="stat-value">
+                <span data-counter data-counter-target="3">0</span>
+              </div>
+              <div class="stat-label">Validated trauma-recovery instruments developed</div>
+            </article>
+          </div>
+        </section>
+
+        <!-- ============================================================
+             PUBLICATIONS PREVIEW
+             ============================================================ -->
+        <section class="section home-section">
+          <div class="home-section-head">
+            <div class="reveal">
+<!--              <span class="eyebrow">Latest scholarship</span>-->
+              <h2>Recent publications</h2>
+              <p>A look at what the lab is putting into the world right now.</p>
             </div>
-            <a class="section-link" href="./publications/">See all publications</a>
+            <a class="section-link reveal" data-reveal-delay="1" href="./publications/">
+              See all publications <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <div class="home-publications-grid">
-            <article class="publication-entry home-publication-entry">
+            <article class="publication-entry home-publication-entry reveal" data-reveal-delay="1">
               <h3 class="publication-title">
                 <a
                   class="publication-title-link"
@@ -65,7 +277,7 @@
                 </a>
               </h3>
               <p class="publication-authors">
-                Mughal, Farida Bibi MScN, BScN; Sinko, Laura PhD, MSPH, RN; Arnault, Denise Saint PhD, RN, FAAN
+                Mughal, F.B.; Sinko, L.; Arnault, D.S. &middot; Nursing Research, 2026
               </p>
               <div class="publication-tags">
                 <span class="publication-tag">Gender-Based Violence</span>
@@ -73,7 +285,7 @@
               </div>
             </article>
 
-            <article class="publication-entry home-publication-entry">
+            <article class="publication-entry home-publication-entry reveal" data-reveal-delay="2">
               <h3 class="publication-title">
                 <a
                   class="publication-title-link"
@@ -83,7 +295,7 @@
                 </a>
               </h3>
               <p class="publication-authors">
-                Sinko, L.; Sorsa, M.; Beardmore, L.; Thorvaldsdottir, K.B.; and collaborators
+                Sinko, L.; Sorsa, M.; Beardmore, L.; Thorvaldsdottir, K.B.; and collaborators &middot; Qualitative Health Research, 2026
               </p>
               <div class="publication-tags">
                 <span class="publication-tag">Gender-Based Violence</span>
@@ -93,68 +305,105 @@
           </div>
         </section>
 
+        <!-- ============================================================
+             TEAM PREVIEW
+             ============================================================ -->
         <section class="section home-section">
-          <div class="section-heading home-section-head">
-            <div>
-              <h2>Team</h2>
+          <div class="home-section-head">
+            <div class="reveal">
+<!--              <span class="eyebrow">Who we are</span>-->
+              <h2>The lab</h2>
               <p>
-                Learn more about the researchers behind the lab and use the team page for fuller
-                member profiles.
+                A small team with a big network — researchers, clinicians, and
+                students working alongside survivors and partners.
               </p>
             </div>
-            <a class="section-link" href="./team/">View full team</a>
+            <a class="section-link reveal" data-reveal-delay="1" href="./team/">
+              View full team <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
 
           <div class="home-team-grid">
-            <article class="member-card featured-member home-team-card">
+            <article class="member-card featured-member home-team-card reveal" data-reveal-delay="1">
               <a class="member-card-link" href="./team/laura-sinko/">
                 <img
                   class="member-photo"
                   src="./assets/team_photos/laura-sinko.jpg"
                   alt="Laura Sinko"
                 />
-                <div>
-                  <h3 class="member-name">Laura Sinko</h3>
-                  <p class="member-role">Principal Investigator</p>
-                </div>
+                <h3 class="member-name">Laura Sinko</h3>
+                <p class="member-role">Principal Investigator</p>
               </a>
             </article>
 
-            <article class="member-card featured-member home-team-card">
+            <article class="member-card featured-member home-team-card reveal" data-reveal-delay="2">
               <a class="member-card-link" href="./team/kayleigh-izzo/">
                 <img
                   class="member-photo"
                   src="./assets/team_photos/kayleigh-izzo.jpg"
                   alt="Kayleigh Izzo"
                 />
-                <div>
-                  <h3 class="member-name">Kayleigh Izzo</h3>
-                  <p class="member-role">Research Associate</p>
-                </div>
+                <h3 class="member-name">Kayleigh Izzo</h3>
+                <p class="member-role">Research Associate</p>
               </a>
             </article>
+
+<!--            <article class="member-card home-team-card reveal" data-reveal-delay="3">-->
+<!--              <a class="member-card-link" href="./team/">-->
+<!--                <div class="member-photo-placeholder ember" aria-hidden="true">+</div>-->
+<!--                <h3 class="member-name">Researcher</h3>-->
+<!--                <p class="member-role">Coming soon</p>-->
+<!--              </a>-->
+<!--            </article>-->
+
+<!--            <article class="member-card home-team-card reveal" data-reveal-delay="4">-->
+<!--              <a class="member-card-link" href="./team/">-->
+<!--                <div class="member-photo-placeholder gold" aria-hidden="true">+</div>-->
+<!--                <h3 class="member-name">Researcher</h3>-->
+<!--                <p class="member-role">Coming soon</p>-->
+<!--              </a>-->
+<!--            </article>-->
           </div>
         </section>
 
+        <!-- ============================================================
+             SURVIVOR FAQ
+             ============================================================ -->
         <section class="section home-section faq-home-section">
-          <div class="section-heading home-section-head">
-            <div>
-              <h2>Survivor FAQ</h2>
-<!--              <p>-->
-<!--                Explore the outer prompts to preview an interactive survivor-centered resource-->
-<!--                map.-->
-<!--              </p>-->
-            </div>
+          <div class="section-heading reveal">
+<!--            <span class="eyebrow">For survivors &amp; allies</span>-->
+            <h2>Survivor FAQ</h2>
+            <p>Hover any prompt to explore a map of survivor-centered resources.</p>
           </div>
 
           <div
-            class="faq-graphic-shell"
+            class="faq-graphic-shell reveal"
             data-home-faq-graphic
             data-home-faq-src="./assets/images/survivor_faq_svggroups.svg"
             aria-label="Interactive survivor FAQ graphic"
           ></div>
         </section>
 
+        <!-- ============================================================
+             CTA BANNER
+             ============================================================ -->
+        <section class="cta-banner reveal">
+          <div>
+            <span class="eyebrow" style="background: rgba(255,255,255,0.12); color: var(--gold-soft);">Get involved</span>
+            <h2>Work with us.</h2>
+            <p>
+              Researchers, clinicians, students, and survivor-advocates — if our
+              questions resonate with yours, we'd love to hear from you.
+            </p>
+          </div>
+          <div class="cta-banner-actions">
+            <a class="button" href="./contact/">
+              Reach out
+              <span class="arrow" aria-hidden="true">&rarr;</span>
+            </a>
+            <a class="button-secondary" href="./contact/#join">Join the lab</a>
+          </div>
+        </section>
       </main>
 
       <div data-include="footer"></div>

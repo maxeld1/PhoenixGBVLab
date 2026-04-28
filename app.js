@@ -1,3 +1,7 @@
+/* =========================================================================
+   PhoenixGBVLab — site behavior
+   ========================================================================= */
+
 function getRootPath() {
   const appScript = document.querySelector('script[src$="app.js"], script[src*="app.js?"]');
 
@@ -29,6 +33,9 @@ async function injectPartial(target) {
 
 let publicationCitationFormats = new Map();
 
+/* -------------------------------------------------------------------------
+   Navigation
+   ------------------------------------------------------------------------- */
 function setupNav() {
   const navToggle = document.querySelector('[data-nav-toggle]');
   const navLinks = document.querySelector('[data-nav-links]');
@@ -38,15 +45,31 @@ function setupNav() {
       const isOpen = navLinks.classList.toggle('is-open');
       navToggle.setAttribute('aria-expanded', String(isOpen));
     });
+
+    // Close mobile nav on link click
+    navLinks.addEventListener('click', (event) => {
+      if (event.target.tagName === 'A' && navLinks.classList.contains('is-open')) {
+        navLinks.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   }
 }
 
-function setCurrentYear() {
-  const currentYear = document.querySelector('[data-current-year]');
+function setupStickyNav() {
+  const topbar = document.querySelector('[data-topbar]');
+  if (!topbar) return;
 
-  if (currentYear) {
-    currentYear.textContent = String(new Date().getFullYear());
-  }
+  const onScroll = () => {
+    if (window.scrollY > 12) {
+      topbar.classList.add('is-scrolled');
+    } else {
+      topbar.classList.remove('is-scrolled');
+    }
+  };
+
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
 }
 
 function setActiveNav() {
@@ -60,6 +83,103 @@ function setActiveNav() {
   }
 }
 
+function setCurrentYear() {
+  const currentYear = document.querySelector('[data-current-year]');
+
+  if (currentYear) {
+    currentYear.textContent = String(new Date().getFullYear());
+  }
+}
+
+/* -------------------------------------------------------------------------
+   Scroll reveal
+   ------------------------------------------------------------------------- */
+function setupScrollReveal() {
+  const elements = document.querySelectorAll('.reveal');
+
+  if (!elements.length) return;
+
+  if (!('IntersectionObserver' in window)) {
+    elements.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReducedMotion) {
+    elements.forEach((el) => el.classList.add('is-visible'));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px',
+    }
+  );
+
+  elements.forEach((el) => observer.observe(el));
+}
+
+/* -------------------------------------------------------------------------
+   Animated counters
+   ------------------------------------------------------------------------- */
+function setupCounters() {
+  const counters = document.querySelectorAll('[data-counter]');
+  if (!counters.length) return;
+
+  const animate = (el) => {
+    const target = Number(el.dataset.counterTarget || el.textContent || 0);
+    const duration = 1400;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(1, elapsed / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = Math.round(target * eased);
+      el.textContent = String(current);
+
+      if (progress < 1) {
+        requestAnimationFrame(tick);
+      } else {
+        el.textContent = String(target);
+      }
+    };
+
+    requestAnimationFrame(tick);
+  };
+
+  if (!('IntersectionObserver' in window)) {
+    counters.forEach(animate);
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animate(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.4 }
+  );
+
+  counters.forEach((el) => observer.observe(el));
+}
+
+/* -------------------------------------------------------------------------
+   Survivor FAQ graphic
+   ------------------------------------------------------------------------- */
 function getHomeFaqBubbleLabel(id) {
   return String(id || '')
     .replace(/^bubble-/, '')
@@ -126,9 +246,6 @@ async function renderHomeFaqGraphic() {
 
     group.classList.add('faq-bubble');
     group.setAttribute('data-base-transform', group.getAttribute('transform') || '');
-    group.setAttribute('tabindex', '0');
-    group.setAttribute('role', 'img');
-    group.setAttribute('aria-label', label);
     group.dataset.bubbleLabel = label;
     group.dataset.faqTopic = topicKey;
 
@@ -140,32 +257,61 @@ async function renderHomeFaqGraphic() {
 
     const setHoveredState = (isHovered) => {
       group.classList.toggle('is-hovered', isHovered);
-      group.setAttribute('transform', isHovered ? getScaledTransform(group, 1.04) : group.getAttribute('data-base-transform') || '');
+      group.setAttribute(
+        'transform',
+        isHovered
+          ? getScaledTransform(group, 1.04)
+          : group.getAttribute('data-base-transform') || ''
+      );
 
       if (relatedArrow) {
         relatedArrow.classList.toggle('is-hovered', isHovered);
         relatedArrow.setAttribute(
           'transform',
-          isHovered ? getScaledTransform(relatedArrow, 1.05) : relatedArrow.getAttribute('data-base-transform') || ''
+          isHovered
+            ? getScaledTransform(relatedArrow, 1.05)
+            : relatedArrow.getAttribute('data-base-transform') || ''
         );
       }
     };
 
-    group.addEventListener('pointerenter', () => {
-      setHoveredState(true);
-    });
-    group.addEventListener('pointerleave', () => {
-      setHoveredState(false);
-    });
-    group.addEventListener('focus', () => {
-      setHoveredState(true);
-    });
-    group.addEventListener('blur', () => {
-      setHoveredState(false);
-    });
+    group.addEventListener('pointerenter', () => setHoveredState(true));
+    group.addEventListener('pointerleave', () => setHoveredState(false));
   });
 }
 
+/* -------------------------------------------------------------------------
+   Research project filters
+   ------------------------------------------------------------------------- */
+function setupProjectFilters() {
+  const filterBar = document.querySelector('[data-project-filters]');
+  const grid = document.querySelector('[data-project-grid]');
+  if (!filterBar || !grid) return;
+
+  const cards = Array.from(grid.querySelectorAll('[data-project-tags]'));
+  const buttons = Array.from(filterBar.querySelectorAll('[data-project-filter]'));
+
+  const applyFilter = (filter) => {
+    cards.forEach((card) => {
+      const tags = (card.dataset.projectTags || '').split(/\s+/).filter(Boolean);
+      const visible = filter === 'all' || tags.includes(filter);
+      card.classList.toggle('is-hidden', !visible);
+    });
+  };
+
+  filterBar.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-project-filter]');
+    if (!button) return;
+
+    const filter = button.dataset.projectFilter || 'all';
+    buttons.forEach((b) => b.classList.toggle('is-active', b === button));
+    applyFilter(filter);
+  });
+}
+
+/* -------------------------------------------------------------------------
+   Publications page
+   ------------------------------------------------------------------------- */
 function formatPublicationDate(dateString, fallbackYear) {
   if (!dateString) {
     return String(fallbackYear || '');
@@ -210,7 +356,10 @@ function highlightText(value, queryTerms) {
     return escapedValue;
   }
 
-  return escapedValue.replace(new RegExp(`(${pattern})`, 'gi'), '<mark class="publication-highlight">$1</mark>');
+  return escapedValue.replace(
+    new RegExp(`(${pattern})`, 'gi'),
+    '<mark class="publication-highlight">$1</mark>'
+  );
 }
 
 function normalizeTag(tag) {
@@ -298,7 +447,11 @@ function buildPublicationMarkup(publication) {
       </div>
       <p class="publication-authors">${highlightText(authors, queryTerms)}</p>
       <div class="publication-tags">
-        ${buildTagMarkup(Array.isArray(publication.tags) ? publication.tags : [], activeTags, queryTerms)}
+        ${buildTagMarkup(
+          Array.isArray(publication.tags) ? publication.tags : [],
+          activeTags,
+          queryTerms
+        )}
       </div>
     </article>
   `;
@@ -391,8 +544,13 @@ function generateCitationFormats(publication) {
   const year = publication.year ? String(publication.year) : 'n.d.';
   const title = publication.title || '';
   const venueDetails = formatVenueDetails(publication);
-  const doiLink = publication.doi ? ` https://doi.org/${publication.doi}` : publication.url ? ` ${publication.url}` : '';
-  const apa = publication.citation ||
+  const doiLink = publication.doi
+    ? ` https://doi.org/${publication.doi}`
+    : publication.url
+      ? ` ${publication.url}`
+      : '';
+  const apa =
+    publication.citation ||
     `${formatAuthorList(authors, '&')} (${year}). ${title}. ${venueDetails}.${doiLink}`.trim();
   const mlaAuthors =
     authors.length > 2
@@ -400,7 +558,9 @@ function generateCitationFormats(publication) {
       : authors.length === 2
         ? `${authors[0]}, and ${authors[1]}`
         : authors[0] || '';
-  const mla = `${mlaAuthors} "${title}." ${venueDetails}, ${year}.${doiLink}`.replace(/\s+/g, ' ').trim();
+  const mla = `${mlaAuthors} "${title}." ${venueDetails}, ${year}.${doiLink}`
+    .replace(/\s+/g, ' ')
+    .trim();
   const chicago = `${formatAuthorList(authors, 'and')}. ${year}. "${title}." ${venueDetails}.${doiLink}`
     .replace(/\s+/g, ' ')
     .trim();
@@ -416,12 +576,7 @@ function generateCitationFormats(publication) {
   url = {${publication.url || ''}}
 }`;
 
-  return {
-    apa,
-    mla,
-    chicago,
-    bibtex,
-  };
+  return { apa, mla, chicago, bibtex };
 }
 
 function buildPublicationSearchText(publication) {
@@ -471,7 +626,7 @@ function buildTagSummary(publications, activeTags, queryTerms) {
   });
 
   return Array.from(counts.entries())
-    .sort((a, b) => a[0].localeCompare(b[0]))
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
     .map(([tag, count]) => {
       const escapedTag = escapeHtml(tag);
       const isActive = activeTags.has(normalizeTag(tag)) ? ' is-active' : '';
@@ -530,9 +685,7 @@ function setupCitationModal() {
     modal.showModal();
   });
 
-  closeButton.addEventListener('click', () => {
-    modal.close();
-  });
+  closeButton.addEventListener('click', () => modal.close());
 
   modal.addEventListener('click', (event) => {
     if (event.target === modal) {
@@ -605,6 +758,48 @@ function renderPublicationGroups(publications, listTarget, emptyTarget, activeTa
     .join('');
 }
 
+function renderPublicationsStats(publications) {
+  const totalEl = document.querySelector('[data-pub-stat="total"]');
+  const recentEl = document.querySelector('[data-pub-stat="recent"]');
+  const topicsEl = document.querySelector('[data-pub-stat="topics"]');
+  const yearsEl = document.querySelector('[data-pub-stat="years"]');
+
+  if (!totalEl) return;
+
+  const total = publications.length;
+  const recent = publications.filter((p) => Number(p.year) >= 2024).length;
+
+  const topicSet = new Set();
+  const years = [];
+  publications.forEach((p) => {
+    (p.tags || []).forEach((t) => topicSet.add(t));
+    if (p.year) years.push(Number(p.year));
+  });
+
+  const yearSpan = years.length ? Math.max(...years) - Math.min(...years) + 1 : 0;
+
+  const animate = (el, target) => {
+    const duration = 1200;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const elapsed = now - start;
+      const progress = Math.min(1, elapsed / duration);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = String(Math.round(target * eased));
+      if (progress < 1) requestAnimationFrame(tick);
+      else el.textContent = String(target);
+    };
+
+    requestAnimationFrame(tick);
+  };
+
+  animate(totalEl, total);
+  if (recentEl) animate(recentEl, recent);
+  if (topicsEl) animate(topicsEl, topicSet.size);
+  if (yearsEl) animate(yearsEl, yearSpan);
+}
+
 async function renderPublicationsPage() {
   if (document.body.dataset.page !== 'publications') {
     return;
@@ -653,11 +848,10 @@ async function renderPublicationsPage() {
   };
 
   setupCitationModal();
+  renderPublicationsStats(publications);
   renderFilteredState();
 
-  searchInput.addEventListener('input', (event) => {
-    renderFilteredState();
-  });
+  searchInput.addEventListener('input', () => renderFilteredState());
 
   tagTarget.addEventListener('click', (event) => {
     const filterButton = event.target.closest('[data-publication-filter]');
@@ -705,6 +899,9 @@ async function renderPublicationsPage() {
   });
 }
 
+/* -------------------------------------------------------------------------
+   Bootstrap
+   ------------------------------------------------------------------------- */
 async function bootstrapPage() {
   const partialTargets = Array.from(document.querySelectorAll('[data-include]'));
 
@@ -712,7 +909,11 @@ async function bootstrapPage() {
 
   setActiveNav();
   setupNav();
+  setupStickyNav();
   setCurrentYear();
+  setupScrollReveal();
+  setupCounters();
+  setupProjectFilters();
   await renderHomeFaqGraphic();
   await renderPublicationsPage();
 }
