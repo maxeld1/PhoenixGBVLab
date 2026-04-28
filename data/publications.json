@@ -1,6 +1,6 @@
 {
   "lab": "PhoenixGBVLab",
-  "lastUpdated": "2026-04-27",
+  "lastUpdated": "2026-04-28",
   "sort": {
     "field": "year",
     "order": "desc"
@@ -1186,6 +1186,734 @@
         "Sexual Violence",
         "Higher Education",
         "Qualitative Research"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-ghazal-fauer-wheldon-2024-rainbows-trauma-informed-cancer-care",
+      "type": "Journal Article",
+      "year": 2024,
+      "publishedDate": "February 15, 2024",
+      "sortDate": "2024-02-15",
+      "title": "It takes more than rainbows: Supporting sexual and gender minority patients with trauma-informed cancer care",
+      "authors": [
+        "Laura Sinko",
+        "Lauren V. Ghazal",
+        "Alex Fauer",
+        "Christopher W. Wheldon"
+      ],
+      "journal": "Cancer",
+      "volume": "130",
+      "issue": "4",
+      "pages": "507-516",
+      "doi": "10.1002/cncr.35120",
+      "url": "https://doi.org/10.1002/cncr.35120",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., Ghazal, L.V., Fauer, A., & Wheldon, C.W. (2024). It takes more than rainbows: Supporting sexual and gender minority patients with trauma-informed cancer care. Cancer, 130(4), 507-516. 10.1002/cncr.35120",
+      "tags": [
+        "Trauma-Informed Care",
+        "Nursing & Healthcare",
+        "Policy & Systems"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-naidenko-michaelsen-et-al-2024-our-wave-community-case-study",
+      "type": "Journal Article",
+      "year": 2024,
+      "publishedDate": "December 18, 2024",
+      "sortDate": "2024-12-18",
+      "title": "Community case study: Our Wave, an online platform to facilitate survivor disclosure of sexual assault and trauma recovery",
+      "authors": [
+        "Laura Sinko",
+        "Olga V. Naidenko",
+        "Brendan Michaelsen",
+        "Cassandra Marzke",
+        "Madeline Hart",
+        "Brooke Tweedie",
+        "Kyle Linton"
+      ],
+      "journal": "Front Public Health",
+      "volume": "12",
+      "issue": "",
+      "pages": "1458510",
+      "doi": "10.3389/fpubh.2024.1458510",
+      "url": "https://doi.org/10.3389/fpubh.2024.1458510",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., Naidenko, O.V., Michaelsen, B., Marzke, C., Hart, M., Tweedie, B., & Linton, K. (2024). Community case study: Our Wave, an online platform to facilitate survivor disclosure of sexual assault and trauma recovery. Front Public Health, 12, 1458510. 10.3389/fpubh.2024.1458510",
+      "tags": [
+        "Gender-Based Violence",
+        "Sexual Violence",
+        "Trauma Recovery"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "ghazal-sinko-2025-extending-trauma-informed-care",
+      "type": "Journal Article",
+      "year": 2025,
+      "publishedDate": "November 4, 2025",
+      "sortDate": "2025-11-04",
+      "title": "Extending Trauma-Informed Care",
+      "authors": [
+        "Lauren Ghazal",
+        "Laura Sinko"
+      ],
+      "journal": "JAMA",
+      "volume": "334",
+      "issue": "17",
+      "pages": "1561-1562",
+      "doi": "10.1001/jama.2025.13659",
+      "url": "https://doi.org/10.1001/jama.2025.13659",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Ghazal, L., & Sinko, L. (2025). Extending Trauma-Informed Care. JAMA, 334(17), 1561-1562. 10.1001/jama.2025.13659",
+      "tags": [
+        "Trauma-Informed Care",
+        "Nursing & Healthcare",
+        "Policy & Systems"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "costa-macedo-de-arruda-sinko-regier-et-al-2025-social-impairment-oud",
+      "type": "Journal Article",
+      "year": 2025,
+      "publishedDate": "March 3, 2025",
+      "sortDate": "2025-03-03",
+      "title": "Exploring social impairment in those with opioid use disorder: linking impulsivity, childhood trauma, and the prefrontal cortex",
+      "authors": [
+        "Thais Costa Macedo de Arruda",
+        "Laura Sinko",
+        "Paul Regier",
+        "Altona Tufanoglu",
+        "Adrian Curtin",
+        "Anne M. Teitelman",
+        "Hasan Ayaz",
+        "Peter F. Cronholm",
+        "Anna Rose Childress"
+      ],
+      "journal": "BMC Psychiatry",
+      "volume": "25",
+      "issue": "1",
+      "pages": "197",
+      "doi": "10.1186/s12888-025-06503-1",
+      "url": "https://doi.org/10.1186/s12888-025-06503-1",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Costa Macedo de Arruda, T., Sinko, L., Regier, P., Tufanoglu, A., Curtin, A., Teitelman, A.M., Ayaz, H., Cronholm, P.F., & Childress, A.R. (2025). Exploring social impairment in those with opioid use disorder: linking impulsivity, childhood trauma, and the prefrontal cortex. BMC Psychiatry, 25(1), 197. 10.1186/s12888-025-06503-1",
+      "tags": [
+        "Trauma",
+        "Women's Health",
+        "Nursing & Healthcare"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-munro-kramer-conley-burns-arnault-2020-healing-not-linear",
+      "type": "Journal Article",
+      "year": 2020,
+      "publishedDate": "April 2020",
+      "sortDate": "2020-04-01",
+      "title": "Healing is not linear: Using photography to describe the day-to-day healing journeys of undergraduate women survivors of sexual violence",
+      "authors": [
+        "Laura Sinko",
+        "Michelle Munro-Kramer",
+        "Terri Conley",
+        "Courtney J. Burns",
+        "Denise M. Saint Arnault"
+      ],
+      "journal": "J Community Psychol",
+      "volume": "48",
+      "issue": "3",
+      "pages": "658-674",
+      "doi": "10.1002/jcop.22280",
+      "url": "https://doi.org/10.1002/jcop.22280",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., Munro-Kramer, M., Conley, T., Burns, C.J., & Saint Arnault, D.M. (2020). Healing is not linear: Using photography to describe the day-to-day healing journeys of undergraduate women survivors of sexual violence. J Community Psychol, 48(3), 658-674. 10.1002/jcop.22280",
+      "tags": [
+        "Sexual Violence",
+        "Trauma Recovery",
+        "Higher Education"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-saint-arnault-2020-finding-strength-to-heal",
+      "type": "Journal Article",
+      "year": 2020,
+      "publishedDate": "October 2020",
+      "sortDate": "2020-10-01",
+      "title": "Finding the Strength to Heal: Understanding Recovery After Gender-Based Violence",
+      "authors": [
+        "Laura Sinko",
+        "Denise Saint Arnault"
+      ],
+      "journal": "Violence Against Women",
+      "volume": "26",
+      "issue": "12-13",
+      "pages": "1616-1635",
+      "doi": "10.1177/1077801219885185",
+      "url": "https://doi.org/10.1177/1077801219885185",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., & Saint Arnault, D. (2020). Finding the Strength to Heal: Understanding Recovery After Gender-Based Violence. Violence Against Women, 26(12-13), 1616-1635. 10.1177/1077801219885185",
+      "tags": [
+        "Gender-Based Violence",
+        "Trauma Recovery",
+        "Qualitative Research"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-goldner-saint-arnault-2021-trac-checklist",
+      "type": "Journal Article",
+      "year": 2021,
+      "publishedDate": "2021",
+      "sortDate": "2021-09-01",
+      "title": "The Trauma Recovery Actions Checklist: Applying Mixed Methods to a Holistic Gender-Based Violence Recovery Actions Measure",
+      "authors": [
+        "Laura Sinko",
+        "Limor Goldner",
+        "Denise Marie Saint Arnault"
+      ],
+      "journal": "Sexes",
+      "volume": "2",
+      "issue": "3",
+      "pages": "363-377",
+      "doi": "10.3390/sexes2030029",
+      "url": "https://doi.org/10.3390/sexes2030029",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., Goldner, L., & Saint Arnault, D.M. (2021). The Trauma Recovery Actions Checklist: Applying Mixed Methods to a Holistic Gender-Based Violence Recovery Actions Measure. Sexes, 2(3), 363-377. 10.3390/sexes2030029",
+      "tags": [
+        "Gender-Based Violence",
+        "Trauma Recovery",
+        "Measurement & Psychometrics"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "saint-arnault-sinko-2019-hope-and-fulfillment-complex-trauma",
+      "type": "Journal Article",
+      "year": 2019,
+      "publishedDate": "2019",
+      "sortDate": "2019-09-01",
+      "title": "Hope and Fulfillment After Complex Trauma: Using Mixed Methods to Understand Healing",
+      "authors": [
+        "Denise Saint Arnault",
+        "Laura Sinko"
+      ],
+      "journal": "Front Psychol",
+      "volume": "10",
+      "issue": "",
+      "pages": "",
+      "doi": "10.3389/fpsyg.2019.02061",
+      "url": "https://doi.org/10.3389/fpsyg.2019.02061",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Saint Arnault, D., & Sinko, L. (2019). Hope and Fulfillment After Complex Trauma: Using Mixed Methods to Understand Healing. Front Psychol, 10. 10.3389/fpsyg.2019.02061",
+      "tags": [
+        "Trauma Recovery",
+        "Qualitative Research",
+        "Measurement & Psychometrics"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "fauer-manges-stroumsa-sinko-et-al-2020-healthcare-discrimination-transgender-nonbinary",
+      "type": "Journal Article",
+      "year": 2020,
+      "publishedDate": "2020",
+      "sortDate": "2020-11-01",
+      "title": "Catalyzing a Nursing Response to Healthcare Discrimination Against Transgender and Nonbinary Individuals",
+      "authors": [
+        "Alex J. Fauer",
+        "Kirstin Manges",
+        "Daphna Stroumsa",
+        "Laura Sinko",
+        "Gillian I. Adynski",
+        "Shoshana V. Aronowitz",
+        "Kristen R. Choi"
+      ],
+      "journal": "J Nurs Scholarsh",
+      "volume": "52",
+      "issue": "6",
+      "pages": "599-604",
+      "doi": "10.1111/jnu.12597",
+      "url": "https://doi.org/10.1111/jnu.12597",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Fauer, A.J., Manges, K., Stroumsa, D., Sinko, L., Adynski, G.I., Aronowitz, S.V., & Choi, K.R. (2020). Catalyzing a Nursing Response to Healthcare Discrimination Against Transgender and Nonbinary Individuals. J Nurs Scholarsh, 52(6), 599-604. 10.1111/jnu.12597",
+      "tags": [
+        "Nursing & Healthcare",
+        "Policy & Systems",
+        "Trauma-Informed Care"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "shetty-pierson-manders-sun-et-al-2024-trauma-informed-community-circles",
+      "type": "Journal Article",
+      "year": 2024,
+      "publishedDate": "2024",
+      "sortDate": "2024-02-01",
+      "title": "Building a Trauma-Informed Community: Applying Community Building Circles to an Academic Health Research Setting",
+      "authors": [
+        "Neha Shetty",
+        "Elizabeth Pierson",
+        "Khamera B. Manders",
+        "YiLing Sun",
+        "Elizabeth Masciantonio",
+        "Laura Sinko"
+      ],
+      "journal": "Acad Med",
+      "volume": "99",
+      "issue": "2",
+      "pages": "164-168",
+      "doi": "10.1097/ACM.0000000000005491",
+      "url": "https://doi.org/10.1097/ACM.0000000000005491",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Shetty, N., Pierson, E., Manders, K.B., Sun, Y., Masciantonio, E., & Sinko, L. (2024). Building a Trauma-Informed Community: Applying Community Building Circles to an Academic Health Research Setting. Acad Med, 99(2), 164-168. 10.1097/ACM.0000000000005491",
+      "tags": [
+        "Trauma-Informed Care",
+        "Nursing & Healthcare",
+        "Policy & Systems"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "regier-de-arruda-sinko-teitelman-childress-2024-cognitive-flexibility-oud",
+      "type": "Journal Article",
+      "year": 2024,
+      "publishedDate": "2024",
+      "sortDate": "2024-10-01",
+      "title": "Factors associated with cognitive flexibility in people with opioid-use disorder: a pilot study",
+      "authors": [
+        "Paul S. Regier",
+        "Thais Costa Macedo de Arruda",
+        "Laura Sinko",
+        "Anne M. Teitelman",
+        "Anna Rose Childress"
+      ],
+      "journal": "Front Psychiatry",
+      "volume": "15",
+      "issue": "",
+      "pages": "1505391",
+      "doi": "10.3389/fpsyt.2024.1505391",
+      "url": "https://doi.org/10.3389/fpsyt.2024.1505391",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Regier, P.S., de Arruda, T.C.M., Sinko, L., Teitelman, A.M., & Childress, A.R. (2024). Factors associated with cognitive flexibility in people with opioid-use disorder: a pilot study. Front Psychiatry, 15, 1505391. 10.3389/fpsyt.2024.1505391",
+      "tags": [
+        "Trauma",
+        "Nursing & Healthcare",
+        "Women's Health"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-bulgin-fauer-aronowitz-2020-nursing-work-justice-work",
+      "type": "Journal Article",
+      "year": 2020,
+      "publishedDate": "2020",
+      "sortDate": "2020-09-01",
+      "title": "Nursing work is justice work: Rethinking justice and promoting healing in survivors of gender-based violence",
+      "authors": [
+        "Laura Sinko",
+        "Dominique Bulgin",
+        "Alex J. Fauer",
+        "Shoshana V. Aronowitz"
+      ],
+      "journal": "Public Health Nurs",
+      "volume": "37",
+      "issue": "5",
+      "pages": "631-636",
+      "doi": "10.1111/phn.12791",
+      "url": "https://doi.org/10.1111/phn.12791",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., Bulgin, D., Fauer, A.J., & Aronowitz, S.V. (2020). Nursing work is justice work: Rethinking justice and promoting healing in survivors of gender-based violence. Public Health Nurs, 37(5), 631-636. 10.1111/phn.12791",
+      "tags": [
+        "Gender-Based Violence",
+        "Nursing & Healthcare",
+        "Policy & Systems"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "kita-sinko-koutra-saint-arnault-2025-start-tool",
+      "type": "Journal Article",
+      "year": 2025,
+      "publishedDate": "2025",
+      "sortDate": "2025-09-01",
+      "title": "Development of the Self-Assessment for Trauma Recovery Tool (START) for survivors of gender-based violence: Classification using latent class analysis",
+      "authors": [
+        "Sachiko Kita",
+        "Laura Sinko",
+        "Kleio Koutra",
+        "Denise Saint Arnault"
+      ],
+      "journal": "Psychol Violence",
+      "volume": "15",
+      "issue": "5",
+      "pages": "555-567",
+      "doi": "10.1037/vio0000508",
+      "url": "https://doi.org/10.1037/vio0000508",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Kita, S., Sinko, L., Koutra, K., & Saint Arnault, D. (2025). Development of the Self-Assessment for Trauma Recovery Tool (START) for survivors of gender-based violence: Classification using latent class analysis. Psychol Violence, 15(5), 555-567. 10.1037/vio0000508",
+      "tags": [
+        "Gender-Based Violence",
+        "Trauma Recovery",
+        "Measurement & Psychometrics"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "pierson-sinko-2022-facing-repercussions-sexual-harm-neuroimaging-review",
+      "type": "Journal Article",
+      "year": 2022,
+      "publishedDate": "2022",
+      "sortDate": "2022-01-01",
+      "title": "\"Facing\" the Repercussions of Sexual Harm: A scoping review on neuroimaging studies using emotional stimuli with survivors of sexual violence",
+      "authors": [
+        "Elizabeth Pierson",
+        "Laura Sinko"
+      ],
+      "journal": "CommonHealth",
+      "volume": "3",
+      "issue": "3",
+      "pages": "107-123",
+      "doi": "10.15367/q8dc7312",
+      "url": "https://doi.org/10.15367/q8dc7312",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Pierson, E., & Sinko, L. (2022). \"Facing\" the Repercussions of Sexual Harm: A scoping review on neuroimaging studies using emotional stimuli with survivors of sexual violence. CommonHealth, 3(3), 107-123. 10.15367/q8dc7312",
+      "tags": [
+        "Sexual Violence",
+        "Reviews & Evidence Synthesis",
+        "Women's Health"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "he-ortiz-kishton-fingerman-jacobs-sinko-2021-caregiver-stress-covid-abstract",
+      "type": "Conference Abstract",
+      "year": 2021,
+      "publishedDate": "2021",
+      "sortDate": "2021-12-01",
+      "title": "In Their Own Words: Children's Perceptions of Caregiver Stress during COVID-19",
+      "authors": [
+        "Yuan He",
+        "Robin Ortiz",
+        "Rachel Kishton",
+        "Michelle Fingerman",
+        "Larel Jacobs",
+        "Laura Sinko"
+      ],
+      "journal": "Health Serv Res",
+      "volume": "56",
+      "issue": "S2",
+      "pages": "19-20",
+      "doi": "10.1111/1475-6773.13744",
+      "url": "https://doi.org/10.1111/1475-6773.13744",
+      "pdf": "",
+      "abstract": "",
+      "citation": "He, Y., Ortiz, R., Kishton, R., Fingerman, M., Jacobs, L., & Sinko, L. (2021). In Their Own Words: Children's Perceptions of Caregiver Stress during COVID-19. Health Serv Res, 56(S2), 19-20. 10.1111/1475-6773.13744",
+      "tags": [
+        "COVID-19",
+        "Youth & Family",
+        "Conference Abstracts"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-kita-arnault-2026-gbv-heal-cutoff-score",
+      "type": "Journal Article",
+      "year": 2026,
+      "publishedDate": "2026",
+      "sortDate": "2026-01-01",
+      "title": "Establishing a Cutoff Score for the Healing after Gender-based Violence Scale (GBV-Heal): A Brief Report",
+      "authors": [
+        "Laura Sinko",
+        "Sachiko Kita",
+        "Denise Saint Arnault"
+      ],
+      "journal": "J Fam Violence",
+      "volume": "41",
+      "issue": "1",
+      "pages": "101-108",
+      "doi": "10.1007/s10896-024-00726-8",
+      "url": "https://doi.org/10.1007/s10896-024-00726-8",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., Kita, S., & Saint Arnault, D. (2026). Establishing a Cutoff Score for the Healing after Gender-based Violence Scale (GBV-Heal): A Brief Report. J Fam Violence, 41(1), 101-108. 10.1007/s10896-024-00726-8",
+      "tags": [
+        "Gender-Based Violence",
+        "Trauma Recovery",
+        "Measurement & Psychometrics"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "bozkurt-terzioglu-uysal-yalcin-zonp-et-al-2025-healing-after-violence-social-support",
+      "type": "Journal Article",
+      "year": 2025,
+      "publishedDate": "2025",
+      "sortDate": "2025-02-01",
+      "title": "Healing After Violence: The Effect of Perception of Social Support on Posttraumatic Growth in Female University Students",
+      "authors": [
+        "Ramazan Bozkurt",
+        "Füsun Terzioğlu",
+        "Suna Uysal Yalçın",
+        "Zeynep Zonp",
+        "Mehtap Akkoç",
+        "Laura Sinko",
+        "Denise M. Saint Arnault"
+      ],
+      "journal": "Violence Against Women",
+      "volume": "31",
+      "issue": "2",
+      "pages": "547-569",
+      "doi": "10.1177/10778012231214771",
+      "url": "https://doi.org/10.1177/10778012231214771",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Bozkurt, R., Terzioğlu, F., Uysal Yalçın, S., Zonp, Z., Akkoç, M., Sinko, L., & Saint Arnault, D.M. (2025). Healing After Violence: The Effect of Perception of Social Support on Posttraumatic Growth in Female University Students. Violence Against Women, 31(2), 547-569. 10.1177/10778012231214771",
+      "tags": [
+        "Gender-Based Violence",
+        "Trauma Recovery",
+        "Higher Education"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "cary-sinko-2025-healing-the-cycle-ipv-brief-report",
+      "type": "Journal Article",
+      "year": 2025,
+      "publishedDate": "2025",
+      "sortDate": "2025-01-01",
+      "title": "Healing the Cycle: an Integrative Approach To Healing Intimate Partner Violence - A Brief Report",
+      "authors": [
+        "Jessica Cary",
+        "Laura Sinko"
+      ],
+      "journal": "J Fam Violence",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1007/s10896-025-00950-w",
+      "url": "https://doi.org/10.1007/s10896-025-00950-w",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Cary, J., & Sinko, L. (2025). Healing the Cycle: an Integrative Approach To Healing Intimate Partner Violence - A Brief Report. J Fam Violence. 10.1007/s10896-025-00950-w",
+      "tags": [
+        "Gender-Based Violence",
+        "Trauma Recovery",
+        "Brief Reports"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-regier-de-arruda-ayaz-aryal-et-al-2025-childhood-sexual-abuse-executive-function-oud",
+      "type": "Journal Article",
+      "year": 2025,
+      "publishedDate": "2025",
+      "sortDate": "2025-01-01",
+      "title": "The Relationship Between Childhood Sexual Abuse and Executive Function for Those in Recovery from Opioid Use Disorder: A Brief Report of a Pilot Study",
+      "authors": [
+        "Laura Sinko",
+        "Paul Regier",
+        "Thais Costa Macedo de Arruda",
+        "Hasan Ayaz",
+        "Subash Aryal",
+        "Anna Rose Childress",
+        "Anne M. Teitelman"
+      ],
+      "journal": "J Fam Violence",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.1007/s10896-025-00876-3",
+      "url": "https://doi.org/10.1007/s10896-025-00876-3",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., Regier, P., de Arruda, T.C.M., Ayaz, H., Aryal, S., Childress, A.R., & Teitelman, A.M. (2025). The Relationship Between Childhood Sexual Abuse and Executive Function for Those in Recovery from Opioid Use Disorder: A Brief Report of a Pilot Study. J Fam Violence. 10.1007/s10896-025-00876-3",
+      "tags": [
+        "Sexual Violence",
+        "Trauma",
+        "Brief Reports"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "mughal-sinko-kita-fedina-arnault-2025-imove-preprint",
+      "type": "Preprint",
+      "year": 2025,
+      "publishedDate": "2025",
+      "sortDate": "2025-12-01",
+      "title": "Psychometric Evaluation of the Motivators and Resources for Trauma Recovery (I-MOVE) Scale among Gender-Based Violence Survivors",
+      "authors": [
+        "Farida Bibi Mughal",
+        "Laura Sinko",
+        "Sachiko Kita",
+        "Lisa Fedina",
+        "Denise Saint Arnault"
+      ],
+      "journal": "Preprints.org",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "10.20944/preprints202512.1704.v1",
+      "url": "https://doi.org/10.20944/preprints202512.1704.v1",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Mughal, F.B., Sinko, L., Kita, S., Fedina, L., & Saint Arnault, D. (2025). Psychometric Evaluation of the Motivators and Resources for Trauma Recovery (I-MOVE) Scale among Gender-Based Violence Survivors. Preprints.org. 10.20944/preprints202512.1704.v1",
+      "tags": [
+        "Gender-Based Violence",
+        "Trauma Recovery",
+        "Measurement & Psychometrics"
+      ],
+      "featured": false,
+      "status": "preprint"
+    },
+    {
+      "id": "forke-barr-sinko-dichter-cronholm-2025-aces-adolescent-reproductive-health",
+      "type": "Journal Article",
+      "year": 2025,
+      "publishedDate": "2025",
+      "sortDate": "2025-07-01",
+      "title": "Adverse childhood experiences (ACEs) and adolescent reproductive health: Differentiating household and community adversity",
+      "authors": [
+        "Christine M. Forke",
+        "Laura G. Barr",
+        "Laura Sinko",
+        "Melissa E. Dichter",
+        "Peter F. Cronholm"
+      ],
+      "journal": "Ann Epidemiol",
+      "volume": "110",
+      "issue": "",
+      "pages": "7-15",
+      "doi": "10.1016/j.annepidem.2025.07.022",
+      "url": "https://doi.org/10.1016/j.annepidem.2025.07.022",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Forke, C.M., Barr, L.G., Sinko, L., Dichter, M.E., & Cronholm, P.F. (2025). Adverse childhood experiences (ACEs) and adolescent reproductive health: Differentiating household and community adversity. Ann Epidemiol, 110, 7-15. 10.1016/j.annepidem.2025.07.022",
+      "tags": [
+        "Youth & Family",
+        "Women's Health",
+        "Trauma"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "szyszko-kelly-epstein-sinko-2024-campus-sexual-violence-advocates",
+      "type": "Journal Article",
+      "year": 2024,
+      "publishedDate": "2024",
+      "sortDate": "2024-01-01",
+      "title": "Campus Sexual Violence Advocates: A Vital Tool for Student Health Promotion",
+      "authors": [
+        "Eryal Szyszko",
+        "Emma Kelly",
+        "Ray Epstein",
+        "Laura Sinko"
+      ],
+      "journal": "CommonHealth",
+      "volume": "5",
+      "issue": "",
+      "pages": "16-18",
+      "doi": "10.15367/gxg8fm68",
+      "url": "https://doi.org/10.15367/gxg8fm68",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Szyszko, E., Kelly, E., Epstein, R., & Sinko, L. (2024). Campus Sexual Violence Advocates: A Vital Tool for Student Health Promotion. CommonHealth, 5, 16-18. 10.15367/gxg8fm68",
+      "tags": [
+        "Sexual Violence",
+        "Higher Education",
+        "Policy & Systems"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-saint-arnault-2021-pearl-abstract",
+      "type": "Conference Abstract",
+      "year": 2021,
+      "publishedDate": "2021",
+      "sortDate": "2021-09-01",
+      "title": "0089 Capturing healing after gender and sexual violence using photo-experiencing and reflective listening (PEARL)",
+      "authors": [
+        "L. Sinko",
+        "D. Saint Arnault"
+      ],
+      "journal": "Inj Prev",
+      "volume": "27",
+      "issue": "Suppl 3",
+      "pages": "A26-A26",
+      "doi": "10.1136/injuryprev-2021-savir.66",
+      "url": "https://doi.org/10.1136/injuryprev-2021-savir.66",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L., & Saint Arnault, D. (2021). 0089 Capturing healing after gender and sexual violence using photo-experiencing and reflective listening (PEARL). Inj Prev, 27(Suppl 3), A26-A26. 10.1136/injuryprev-2021-savir.66",
+      "tags": [
+        "Gender-Based Violence",
+        "Trauma Recovery",
+        "Conference Abstracts"
+      ],
+      "featured": false,
+      "status": "published"
+    },
+    {
+      "id": "sinko-2020-amplifying-day-to-day-sexual-violence-healing-abstract",
+      "type": "Conference Abstract",
+      "year": 2020,
+      "publishedDate": "2020",
+      "sortDate": "2020-09-01",
+      "title": "168 Amplifying day-to-day sexual violence healing experiences through photography and storytelling",
+      "authors": [
+        "Laura Sinko"
+      ],
+      "journal": "Inj Prev",
+      "volume": "26",
+      "issue": "Suppl 1",
+      "pages": "A27-A28",
+      "doi": "10.1136/injuryprev-2020-savir.68",
+      "url": "https://doi.org/10.1136/injuryprev-2020-savir.68",
+      "pdf": "",
+      "abstract": "",
+      "citation": "Sinko, L. (2020). 168 Amplifying day-to-day sexual violence healing experiences through photography and storytelling. Inj Prev, 26(Suppl 1), A27-A28. 10.1136/injuryprev-2020-savir.68",
+      "tags": [
+        "Sexual Violence",
+        "Trauma Recovery",
+        "Conference Abstracts"
       ],
       "featured": false,
       "status": "published"
